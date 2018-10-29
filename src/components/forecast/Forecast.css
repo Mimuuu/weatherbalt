@@ -1,0 +1,12 @@
+.forecast {
+	float: left;
+	padding: 20px;
+}
+
+.forecast p {
+	margin: 0;
+}
+
+.forecast__metadata-title {
+	font-weight: 700;
+}

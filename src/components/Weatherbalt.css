@@ -1,0 +1,18 @@
+.weatherbalt {
+	padding: 20px;
+}
+
+.weatherbalt > h1 {
+	text-align: center;
+}
+
+.weatherbalt__spinner {
+	width: 50px;
+	margin: 50px auto;
+}
+
+.weatherbalt__error {
+	color: red;
+	font-weight: 700;
+	margin: 20px 0;
+}

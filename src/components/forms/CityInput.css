@@ -1,0 +1,36 @@
+.city-input {
+	position: relative;
+}
+
+.city-input input {
+	width: 200px;
+	line-height: 30px;
+}
+
+.city-input button {
+	padding: 0 20px;
+	line-height: 30px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.city-input__autocomplete {
+	position: absolute;
+	top: 30px;
+	width: 200px;
+	left: 0;
+	border: 1px solid lightgray;
+	z-index: 10;
+	background: lightgray;
+}
+
+.autocomplete-item {
+	cursor: pointer;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 5px;
+}
+
+.autocomplete-item:hover {
+	background: lightslategray;
+}
