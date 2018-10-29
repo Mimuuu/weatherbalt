@@ -16,3 +16,8 @@ interface City {
 	name: string;
 	id?: number;
 }
+
+interface Coords {
+	lat: number;
+	lon: number;
+}

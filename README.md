@@ -5,7 +5,7 @@ Note: This project was bootstrapped with [Create React App](https://github.com/f
 This shows the next 5 days of Weather for a specific City, using the openweathermap.org API ([https://openweathermap.org/](https://openweathermap.org/)).
 
 It's loading London (UK) by default, but you can specify a different city using using the form on the page. For more accurate result, select a City
-provided by the autocompletion system before validating the form.
+provided by the autocompletion system before validating the form. It will also prompt the browser location modal, accept to show the weather where you are right away.
 
 ## Install Dependencies
 
@@ -53,7 +53,7 @@ To run the tests, simply type in the ternminal:
 npm test
 ```
 
-Or alterntively:
+Or alternatively:
 
 ```
 yarn test

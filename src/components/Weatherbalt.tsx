@@ -2,7 +2,7 @@ import * as React from 'react';
 import CityInput from './forms/CityInput';
 import ForecastList from './forecast/ForecastList';
 import Spinner from './loading/Spinner';
-import { getForecastByCity, getForecastById } from '../utils/api';
+import { getForecastByCity, getForecastById, getForecastByCoords } from '../utils/api';
 import { buildForecastList } from '../utils/utils';
 
 import './Weatherbalt.css';
@@ -25,9 +25,12 @@ class Weatherbalt extends React.Component<{}, WeatherbaltState> {
 	componentDidMount() {
 		if ('geolocation' in navigator) {
 			navigator.geolocation.getCurrentPosition(pos => {
-				console.log('## POS', pos);
-				// TODO
-				this.loadForecast(DEFAULT_CITY);
+				const coords: Coords = {
+					lat: pos.coords.latitude,
+					lon: pos.coords.longitude
+				};
+
+				getForecastByCoords(coords).then(this.updateWeather).catch(this.setError);
 			}, () => {
 				this.loadForecast(DEFAULT_CITY);
 			})
