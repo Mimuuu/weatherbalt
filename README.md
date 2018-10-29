@@ -12,7 +12,7 @@ provided by the autocompletion system before validating the form.
 Once you've clone the repository on your machine, navigate to the folder and run the following command in the terminal:
 
 ```
-npm` install
+npm install
 ```
 
 If you are using Yarn, you can simply use:
